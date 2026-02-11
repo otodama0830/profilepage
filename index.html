@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>伊藤慶 | Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">伊藤慶</h1>
+    <p class="subtitle">My Profile Page</p>
+  </header>
+
+  <main class="container">
+    <section class="card profile">
+      <div class="avatar-wrap">
+        <img class="avatar" src="images/profile.jpg" alt="プロフィール写真（伊藤慶）" />
+      </div>
+
+      <div class="profile-info">
+        <h2 class="section-title">プロフィール</h2>
+        <ul class="list">
+          <li><span>名前</span>：伊藤慶</li>
+          <li><span>誕生日</span>：8月30日</li>
+          <li><span>特技</span>：ドラム、ギター、ピアノ、トランペット</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card gallery">
+      <h2 class="section-title">好きな写真</h2>
+      <p class="hint">画像をクリックすると説明が表示されます。</p>
+
+      <div class="grid" id="photoGrid">
+        <button class="photo" type="button" data-desc="紅の豚が大好きです。">
+          <img src="images/fav1.jpg" alt="紅の豚" />
+        </button>
+
+        <button class="photo" type="button" data-desc="天空の城のラピュタのワンシーン。">
+          <img src="images/fav2.jpg" alt="天空の城のラピュタ" />
+        </button>
+
+        <button class="photo" type="button" data-desc="崖の上のポニョの再現。">
+          <img src="images/fav3.jpg" alt="崖の上のポニョ" />
+        </button>
+      </div>
+
+      <div class="desc" id="descBox" aria-live="polite">
+        <p class="desc-title">写真の説明</p>
+        <p class="desc-text" id="descText">写真をクリックするとここに説明が出ます。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Kei Ito</small>
+  </footer>
+
+  <script src="animation.js"></script>
+</body>
+</html>
